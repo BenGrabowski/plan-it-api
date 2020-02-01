@@ -23,7 +23,7 @@ app.use(helmet());
 //     })
 // );
 
-const whitelist = 'https://plan-it.now.sh';
+const whitelist = ['https://plan-it.now.sh'];
 
 const corsOptions = {
     origin: function(origin, callback) {
