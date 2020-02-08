@@ -16,7 +16,6 @@ eventsRouter
             req.headers.user_id
         )
             .then(events => {
-                console.log(events);
                 res.status(200).json(EventsService.serializeEvents(events));
             })
             .catch(next);
